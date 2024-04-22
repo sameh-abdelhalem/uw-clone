@@ -109,7 +109,7 @@ export default function NavBar() {
         </div>
       </header>
       <nav className="md:p-4  text-darkGray antialiased md:px-8 xl:max-w-[85%] xl:mx-auto ">
-        <div className="hidden  space-x-4  md:flex font-medium">
+        <div className="hidden  space-x-4  md:flex font-medium pt-1">
           <Link href="#" className=" hover:text-navGreen hover:underline">
             Development & IT
           </Link>

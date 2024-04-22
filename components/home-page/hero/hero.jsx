@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="flex justify-between py-11 ">
       <div className="flex flex-col w-1/2 sm:w-1/2 space-y-7  lg:w-1/3  ">
-        <h1 className="text-5xl text-textGreen sm:text-6xl md:text-7xl xl:text-8xl font-bold">
+        <h1 className="text-5xl text-textGreen sm:text-6xl md:text-7xl  font-bold">
           How work should work
         </h1>
         <p className="text-xl text-gray-600">
