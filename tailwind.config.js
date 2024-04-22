@@ -20,9 +20,7 @@ module.exports = {
         navGreen: "#108a00",
         darkGray: "rgb(24, 24, 24)",
       },
-      fontFamily: {
-        sans: ["Roboto", "sans-serif"],
-      },
+
       backgroundImage: {},
     },
   },

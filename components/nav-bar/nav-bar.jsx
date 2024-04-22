@@ -10,7 +10,7 @@ export default function NavBar() {
     setIsOpen((prevState) => !prevState);
   };
   return (
-    <div className="fixed w-full bg-white ">
+    <div className="text-sm  lg:text-base  fixed w-full bg-white">
       <header className="p-4  text-darkGray antialiased border-b border-gray-300 md:px-8 ">
         <div className="flex justify-between xl:max-w-[85%] xl:mx-auto">
           <div className="flex space-x-4 md:space-x-0">
@@ -113,7 +113,7 @@ export default function NavBar() {
             <div className="self-center lg:hidden">
               <SearchSvg className={"w-6 "} />
             </div>
-            <div className=" hidden self-center lg:border-2 lg:border-gray-300 lg:rounded-full  lg:p-[1px] lg:flex lg:justify-between group lg:hover:bg-gray-200">
+            <div className=" hidden self-center lg:border-2 lg:border-gray-300 lg:rounded-full font-semibold lg:p-[1px] lg:flex lg:justify-between group lg:hover:bg-gray-200">
               <div className="relative pl-[1px] flex items-center rounded-full group py-[1px]">
                 <SearchSvg className="absolute left-3 w-6 pointer-events-none " />
                 <input
@@ -124,7 +124,7 @@ export default function NavBar() {
                   data-cy="search-input"
                   placeholder="Search"
                   aria-label="Search"
-                  className="h-full pl-10 py-1 space-x-2 rounded-full placeholder:text-gray-500 focus:border-gray-500 hover:!bg-gray-50 group-hover:bg-gray-200 focus:outline-none w-full"
+                  className="h-full pl-10 py-1 space-x-2 rounded-full placeholder:font-semibold placeholder:text-gray-500 focus:border-gray-500 hover:!bg-gray-50 group-hover:bg-gray-200 focus:outline-none w-full"
                 />
               </div>
 
@@ -135,10 +135,13 @@ export default function NavBar() {
                 </div>
               </button>
             </div>
-            <Link href={"/login"} className="hidden md:flex self-center">
+            <Link
+              href={"/login"}
+              className="hidden md:flex self-center font-semibold"
+            >
               Log in
             </Link>
-            <Button className={"hidden"}>Sign Up</Button>
+            <Button className={"hidden font-semibold"}>Sign Up</Button>
           </div>
         </div>
       </header>
