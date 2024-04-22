@@ -71,3 +71,7 @@ body {
 .open .hamburger-bottom {
   transform: rotate(-45deg);
 }
+
+.peer:hover + input {
+  @apply bg-gray-50;
+}

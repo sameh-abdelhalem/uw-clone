@@ -59,11 +59,45 @@ export default function NavBar() {
                   </Link>
                   <Link href="#" className=" hover:text-navGreen flex group">
                     <p>Find Work</p>
-                    <HoverArrowSvg />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      className="ml-1 w-4 group-hover:rotate-180 transition-all duration-150"
+                    >
+                      <path
+                        vector-effect="non-scaling-stroke"
+                        stroke="var(--icon-color, #001e00)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="1.5"
+                        d="M18 10l-6 5-6-5"
+                      ></path>
+                    </svg>
                   </Link>
                   <Link href="#" className=" hover:text-navGreen flex group">
                     <p>Why Upwork</p>
-                    <HoverArrowSvg />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      className="ml-1 w-4 group-hover:rotate-180 transition-all duration-150"
+                    >
+                      <path
+                        vector-effect="non-scaling-stroke"
+                        stroke="var(--icon-color, #001e00)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="1.5"
+                        d="M18 10l-6 5-6-5"
+                      ></path>
+                    </svg>
                   </Link>
                   <Link href="#" className=" hover:text-navGreen flex group">
                     <p>Enterprise</p>
@@ -80,18 +114,18 @@ export default function NavBar() {
               <SearchSvg className={"w-6 "} />
             </div>
             <div className=" hidden self-center lg:border-2 lg:border-gray-300 lg:rounded-full  lg:p-[1px] lg:flex lg:justify-between group lg:hover:bg-gray-200">
-              <div className="pl-2 flex  hover:!bg-gray-50  group-hover:bg-gray-200 rounded-full group">
-                <SearchSvg className={"w-6 "} />
+              <div className="relative pl-[1px] flex items-center rounded-full group">
+                <SearchSvg className="absolute left-3 w-6 pointer-events-none cursor-pointer" />
                 <input
-                  maxlength="100"
-                  autocomplete="off"
+                  maxLength="100"
+                  autoComplete="off"
                   type="search"
                   name="q"
                   data-cy="search-input"
                   placeholder="Search"
                   aria-label="Search"
-                  className="flex space-x-2  pl-2  rounded-full focus:border-gray-500 hover:!bg-gray-50 group-hover:bg-gray-200 focus:outline-none group-focus:outline-gray-900"
-                ></input>
+                  className="pl-10 py-1 space-x-2 rounded-full focus:border-gray-500 hover:!bg-gray-50 group-hover:bg-gray-200 focus:outline-none w-full"
+                />
               </div>
 
               <button className="hidden lg:flex lg:border-l-2 hover:bg-gray-50 hover:rounded-full px-2 py-1 ">

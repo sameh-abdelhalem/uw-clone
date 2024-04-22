@@ -61,7 +61,7 @@ export function HoverArrowSvg() {
       aria-hidden="true"
       viewBox="0 0 24 24"
       role="img"
-      className="ml-1 w-4 group-hover:rotate-180"
+      className="ml-1 w-4 group-hover:rotate-180 transition-all duration-150"
     >
       <path
         vector-effect="non-scaling-stroke"
