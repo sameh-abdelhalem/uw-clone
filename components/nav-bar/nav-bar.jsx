@@ -106,7 +106,7 @@ export default function NavBar() {
               </div>
             </div>
           </div>
-          <div className="flex space-x-4 ">
+          <div className="flex space-x-6 ">
             <Link href={"/signup"} className="md:hidden">
               Sign up
             </Link>
@@ -114,8 +114,8 @@ export default function NavBar() {
               <SearchSvg className={"w-6 "} />
             </div>
             <div className=" hidden self-center lg:border-2 lg:border-gray-300 lg:rounded-full  lg:p-[1px] lg:flex lg:justify-between group lg:hover:bg-gray-200">
-              <div className="relative pl-[1px] flex items-center rounded-full group">
-                <SearchSvg className="absolute left-3 w-6 pointer-events-none cursor-pointer" />
+              <div className="relative pl-[1px] flex items-center rounded-full group py-[1px]">
+                <SearchSvg className="absolute left-3 w-6 pointer-events-none " />
                 <input
                   maxLength="100"
                   autoComplete="off"
@@ -124,18 +124,18 @@ export default function NavBar() {
                   data-cy="search-input"
                   placeholder="Search"
                   aria-label="Search"
-                  className="pl-10 py-1 space-x-2 rounded-full focus:border-gray-500 hover:!bg-gray-50 group-hover:bg-gray-200 focus:outline-none w-full"
+                  className="h-full pl-10 py-1 space-x-2 rounded-full placeholder:text-gray-500 focus:border-gray-500 hover:!bg-gray-50 group-hover:bg-gray-200 focus:outline-none w-full"
                 />
               </div>
 
-              <button className="hidden lg:flex lg:border-l-2 hover:bg-gray-50 hover:rounded-full px-2 py-1 ">
+              <button className="hidden lg:flex lg:border-l-2 hover:bg-gray-50 hover:rounded-full px-2 py-2 ">
                 <div className="flex items-center ">
                   <p className="pl-4">Talent</p>
                   <ArrowSvg />
                 </div>
               </button>
             </div>
-            <Link href={"/signup"} className="hidden md:flex self-center">
+            <Link href={"/login"} className="hidden md:flex self-center">
               Log in
             </Link>
             <Button className={"hidden"}>Sign Up</Button>
