@@ -2,7 +2,7 @@ import Hero from "@/components/home-page/hero/hero";
 
 export default function Home() {
   return (
-    <main className=" pt-20 md:pt-36 mx-20 xl:max-w-[70%] xl:mx-auto">
+    <main className=" pt-20 md:pt-36 mx-4 sm:mx-11 md:mx-20 xl:max-w-[70%] xl:mx-auto">
       <Hero />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident

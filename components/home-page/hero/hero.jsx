@@ -4,7 +4,7 @@ import heroImage from "@/public/images/searching-talent@2x.webp";
 export default function Hero() {
   return (
     <div className="flex justify-between py-11 ">
-      <div className="flex flex-col w-1/2 space-y-7  lg:w-1/3  ">
+      <div className="flex flex-col w-1/2 sm:w-1/2 space-y-7  lg:w-1/3  ">
         <h1 className="text-5xl text-textGreen sm:text-6xl md:text-7xl xl:text-8xl font-bold">
           How work should work
         </h1>
@@ -16,7 +16,7 @@ export default function Hero() {
           <Button>Get started</Button>
         </div>
       </div>
-      <div className="w-[370px] xl:w-[440px] xl:mr-36 self-center">
+      <div className="hidden sm:block w-[370px] lg:w-[440px] xl:mr-36 self-center">
         <Image
           src={heroImage}
           alt="image showcasing searching talent"
