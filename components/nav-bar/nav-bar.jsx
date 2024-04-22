@@ -31,10 +31,10 @@ export default function NavBar() {
             </div>
             <div className="flex space-x-4">
               {/* logo */}
-              <Link href="/" className="w-20 self-center">
+              <Link href="/" className="w-20 self-center mr-4">
                 <LogoSvg />
               </Link>
-              <div className="self-center">
+              <div className="self-center ">
                 <div className="hidden  space-x-4  md:flex font-medium">
                   <Link href="#" className=" hover:text-navGreen flex group">
                     <p>Find Talent</p>
